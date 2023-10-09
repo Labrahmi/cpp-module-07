@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "__tuple": "cpp",
+        "array": "cpp",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "exception": "cpp",
+        "cstdlib": "cpp",
+        "mutex": "cpp"
+    }
+}
