@@ -1,14 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 12:52:57 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/10/08 14:46:54 by ylabrahm         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#ifndef ITER_HPP
+#define ITER_HPP
 
 #include <iostream>
 
@@ -36,3 +27,5 @@ void print_array(T *arr, unsigned int length)
     }
     std::cout << std::endl;
 }
+
+#endif

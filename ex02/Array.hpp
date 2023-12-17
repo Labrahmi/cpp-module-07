@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Array.hpp                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 07:47:56 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/10/09 08:32:11 by ylabrahm         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 
@@ -24,9 +12,7 @@ private:
     unsigned int length;
 
 public:
-    Array() : element(NULL), length(0)
-    {
-    }
+    Array() : element(NULL), length(0){}
     //
     Array(unsigned int n) : length(n)
     {
@@ -35,7 +21,7 @@ public:
     //
     Array(const Array &src) : length(src.length)
     {
-        this->element = new T[this->length];
+        this->element = new T[this->length]();
         for (unsigned i = 0; i < this->length; i++)
             this->element[i] = src.element[i];
     }
@@ -46,7 +32,7 @@ public:
         {
             delete[] this->element;
             this->length = rhs.length;
-            this->element = new T[this->length];
+            this->element = new T[this->length]();
             for (unsigned i = 0; i < this->length; i++)
                 this->element[i] = rhs.element[i];
         }
